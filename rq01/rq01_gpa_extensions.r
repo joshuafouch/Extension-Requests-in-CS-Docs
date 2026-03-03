@@ -1,12 +1,6 @@
 ######## RESEARCH QUESTION 1 ######## 
 # Students with lower starting GPAs are more likely to request extensions than students with higher starting GPAs.
 
-# Source setup
-source("00_setup.r")
-
-# 1. Load Data
-SurveyData <- read.csv("Aggregate_Survey+Grade_Data - SurveyData AnonimizedReconciled(1).csv", stringsAsFactors = FALSE)
-
 # Fix non-numeric extension column
 SurveyData$num_exts <- as.numeric(as.character(SurveyData$num_exts))
 
@@ -19,10 +13,10 @@ gpa_levels <- c("1.5 - 1.99", "2.0 - 2.49", "2.5 - 2.99", "3.0 - 3.49", "3.5 - 4
 SurveyData$Est_GPA_Factor <- factor(SurveyData$Est_GPA, levels = gpa_levels)
 SurveyData$GPA_Rank <- as.numeric(SurveyData$Est_GPA_Factor)
 
-# 3. Statistical Test (Spearman Correlation)
+# 1. Statistical Test (Spearman Correlation)
 print(cor.test(SurveyData$GPA_Rank, SurveyData$num_exts, method = "spearman"))
 
-# 4. Visualization
+# 2. Visualization
 ggplot(subset(SurveyData, !is.na(Est_GPA_Factor)), aes(x = Est_GPA_Factor, y = num_exts)) + 
   
   stat_summary(fun = mean, geom = "bar", fill = "darkgray", color = "black", width = 0.7) + 
