@@ -34,7 +34,7 @@ students with higher starting GPAs.
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
-  image("rq01_graph.png", width: 100%),
+  image("rq01_graph.png", width: 70%),
   caption: [Average extensions requested by estimated GPA group.]
 )
 
@@ -50,27 +50,18 @@ n counts displayed inside each bar.
 
 #v(0.8em)
 
-// ── Raw Values Summary ───────────────────────────────────────────────────────
-#text(weight: "bold")[Raw Values Summary]
-#v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  // Paste key values from raw_rq01_gpa_extensions.r output below,
-  // or reference rq01_raw_output.txt for the full table.
-
-  _[ paste raw values here ]_
-]
-
-#v(0.8em)
-
 // ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* Spearman Correlation \
-*Result:* _[ paste rho and p-value here ]_
+
+*Result:* 
+$
+rho = -0.42, p < 0.0001 $
 
 #v(0.8em)
 
 // ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-_[ Write your conclusion here ]_
+Using a Spearman Correlation with a rho value of -0.42 and a P-value of < 0.0001. This means there is a moderate negative correlation; as the GPA increases, the number of extensions requested decreases. The bar graph shows a clear downward trend. The reason there are no entries for the “1.5 - 1.99” rank is due to no IRB approved students answering this.

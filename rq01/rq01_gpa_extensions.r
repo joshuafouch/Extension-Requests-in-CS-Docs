@@ -25,7 +25,7 @@ print(cor.test(SurveyData$GPA_Rank, SurveyData$num_exts, method = "spearman"))
 # 4. Visualization
 ggplot(subset(SurveyData, !is.na(Est_GPA_Factor)), aes(x = Est_GPA_Factor, y = num_exts)) + 
   
-  stat_summary(fun = mean, geom = "bar", fill = "darkgreen", color = "black", width = 0.7) + 
+  stat_summary(fun = mean, geom = "bar", fill = "darkgray", color = "black", width = 0.7) + 
   
   stat_summary(fun.data = function(x){
     return(data.frame(y = mean(x), label = paste0("n=", length(x))))
