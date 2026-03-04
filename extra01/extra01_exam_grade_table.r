@@ -1,14 +1,6 @@
 ####### Table of Exam Scores, Final Grades, Avg Extensions, etc... #############
 
-# Source setup
-source("00_setup.r")
-
-library(dplyr)
-
-# 1. Load Data
-SurveyData <- read.csv("surveydata.csv", stringsAsFactors = FALSE)
-
-# 2. Clean and Prepare Data
+# 1. Clean and Prepare Data
 Summary_Data <- SurveyData %>%
   # FILTER: Remove students who don't have a Final Exam Score (The "NA" lines)
   filter(!is.na(Final_Exam_Score) & !is.na(num_exts) & !is.na(Est_GPA)) %>%
@@ -28,7 +20,7 @@ Summary_Data <- SurveyData %>%
   ) %>%
   filter(GPA_Range != "Other")
 
-# 3. Create the Summary Table
+# 2. Create the Summary Table
 Table_Output <- Summary_Data %>%
   group_by(GPA_Range, num_exts) %>%
   summarise(
@@ -38,6 +30,6 @@ Table_Output <- Summary_Data %>%
     .groups = 'drop'
   )
 
-# 4. View the Clean Table
+# 3. View the Clean Table
 print(Table_Output)
-write.csv(Table_Output, "Clean_GPA_Extension_Analysis.csv", row.names = FALSE)
+write.csv(Table_Output, "GPA_Extension_Analysis.csv", row.names = FALSE)
