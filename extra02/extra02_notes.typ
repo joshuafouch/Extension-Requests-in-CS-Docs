@@ -3,6 +3,7 @@
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Extra 02]
   #v(0.2em)
@@ -13,18 +14,14 @@
 
 #v(0.8em)
 
+// ── Purpose ──────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Purpose]
 #v(0.3em)
 Does the number of extensions used correlate with final exam performance?
 
 #v(0.8em)
 
-#text(weight: "bold")[Hypothesis]
-#v(0.3em)
-_[ Write your hypothesis here ]_
-
-#v(0.8em)
-
+// ── Graph ────────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
@@ -34,6 +31,7 @@ _[ Write your hypothesis here ]_
 
 #v(0.8em)
 
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
 Bar chart — Average final exam score per extension usage group. \
@@ -42,23 +40,22 @@ Bar chart — Average final exam score per extension usage group. \
 n counts shown inside bars; mean % shown above bars. \
 Significance star (\*) annotated on the graph.
 
-#v(0.8em)
+#pagebreak()
 
-#text(weight: "bold")[Raw Values Summary]
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
++ Those who took no extensions (count: 23) got a mean exam score of 103.2
++ Those who took 1 extensions (count: 23) got a mean exam score of 97.8
++ Those who took 2 extensions (count: 42) got a mean exam score of 88.7
 
 #v(0.8em)
 
+// ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* One-way ANOVA \
-*Result:* _[ paste p-value here ]_
+*Result:* $ p = 0.017 $
 
 #v(0.8em)
-
-#text(weight: "bold")[Notes / Interpretation]
-#v(0.3em)
-_[ Write your notes here ]_
