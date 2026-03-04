@@ -1,65 +1,67 @@
-#set document(title: "RQ08 — Protocol Compliance")
+#set document(title: "RQ08 — Year Level & Extension Usage")
 #set page(margin: 1.2in)
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Research Question 8]
   #v(0.2em)
-  #text(size: 12pt, style: "italic")[Protocol Compliance]
+  #text(size: 12pt, style: "italic")[Year Level & Extension Usage]
   #v(0.4em)
   #line(length: 100%)
 ]
 
 #v(0.8em)
 
+// ── Question ─────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Question]
 #v(0.3em)
-How many extension requests were submitted correctly and on time according to
-the protocol?
+Is there a correlation between grade level and the amount of extensions used?
 
 #v(0.8em)
 
-#text(weight: "bold")[Hypothesis]
-#v(0.3em)
-_[ Write your hypothesis here ]_
-
-#v(0.8em)
-
+// ── Graph ────────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
   image("rq08_graph.png", width: 100%),
-  caption: [Timing of extension requests relative to the deadline.]
+  caption: [Average extension usage by academic year level.]
 )
 
 #v(0.8em)
 
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
-Histogram — Timing of extension requests relative to deadline. \
-*X-axis:* Days before deadline (negative = late / after deadline) \
-*Y-axis:* Number of requests \
-Bars colored by compliance (Correct = In Advance / Incorrect = After Deadline). \
-Vertical dashed line at x = 0. Bin width: 1 day.
+Bar chart — Average extensions used per academic year level. \
+*X-axis:* Year level (Freshman / Sophomore / Junior / Senior) \
+*Y-axis:* Average extensions used \
+n counts displayed above each bar.
 
-#v(0.8em)
+#pagebreak()
 
-#text(weight: "bold")[Raw Values Summary]
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
+
++ The Freshman (Count: 20) had an mean of 0.9 extensions used.
++ The Sophomore (Count: 29) had an mean of 1.2414 extensions used.
++ The Junior (Count: 20) had an mean of 1.25 extensions used.
++ The Freshman (Count: 19) had an mean of 1.4737 extensions used.
 
 #v(0.8em)
 
+// ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
-*Test used:* Descriptive / frequency count \
-*Result:* _[ note count of correct vs incorrect requests here ]_
+*Test used:* One-way ANOVA \
+*Result:* $ p = 0.194 $
 
 #v(0.8em)
 
+// ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-_[ Write your conclusion here ]_
+Though the data is not significant (p > 0.05), this still tells us something. Our data shows a positive correlation: as grade level increases, the amount of extensions used increases slightly. Our extensions policy is helpful for all students and is not necessarily a “safety net” or a “holding hand” for lowerclassmen students who just began college. Despite this, due to the insignificance proven, our extension policy can help all students alike without hindering performance or drastically changing performance.
