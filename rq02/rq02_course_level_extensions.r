@@ -1,9 +1,6 @@
 ######## RESEARCH QUESTION 2 ######## 
 # Students in lower-division (freshman/sophomore) courses will request extensions more frequently than those in upper-division (junior) courses.
 
-# Source setup
-source("00_setup.r")
-
 # Ensure extensions are numeric
 SurveyData$num_exts <- as.numeric(as.character(SurveyData$num_exts))
 
@@ -26,8 +23,7 @@ Labels <- Class_Data %>%
 # Plot with Labels
 ggplot(Class_Data, aes(x = Course_Code, y = num_exts, fill = Course_Code)) +
     stat_summary(fun = mean, geom = "bar", color = "black") +
-    stat_summary(fun.data = mean_cl_normal, geom = "errorbar", width = 0.2) +
-    
+    scale_fill_grey(start = 0.2, end = 0.85) +
     # Add "n=XX" labels at the bottom of bars
     geom_text(data = Labels, aes(y = y_pos, label = paste0("n=", Count)), 
               color = "white", fontface = "bold", vjust = 0) +
