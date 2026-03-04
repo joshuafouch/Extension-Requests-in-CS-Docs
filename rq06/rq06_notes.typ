@@ -1,65 +1,56 @@
-#set document(title: "RQ06 — Strict Deadlines & Grade Quality")
+#set document(title: "RQ06 — Submission Completion Rate")
 #set page(margin: 1.2in)
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Research Question 6]
   #v(0.2em)
-  #text(size: 12pt, style: "italic")[Strict Deadlines & Grade Quality]
+  #text(size: 12pt, style: "italic")[Submission Completion Rate]
   #v(0.4em)
   #line(length: 100%)
 ]
 
 #v(0.8em)
 
+// ── Question ─────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Question]
 #v(0.3em)
-Do students believe that strict deadlines would improve their learning, or does
-the policy's flexibility allow for higher quality work?
+Of the students who requested extensions, what percentage were never submitted
+versus the percentage that were submitted?
 
 #v(0.8em)
 
-#text(weight: "bold")[Hypothesis]
-#v(0.3em)
-_[ Write your hypothesis here ]_
-
-#v(0.8em)
-
+// ── Graph ────────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
-  image("rq06_graph.png", width: 100%),
-  caption: [Distribution of final grades by opinion on strict deadlines.]
+  image("rq06_graph.png", width: 80%),
+  caption: [Submission outcomes for extension requests.]
 )
 
 #v(0.8em)
 
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
-Density plot — Distribution of final course grades by student opinion on strict deadlines. \
-*X-axis:* Final course grade (%) — zoomed to 60–110 \
-*Y-axis:* Density of students \
-*Fill:* Opinion group (Strictness = Worse Quality / Strictness = No Impact) \
-Note: the single "significantly better" outlier is excluded.
+Pie chart — Submission outcomes for extension requests. \
+*Slices:* Work Completed vs Work Ghosted (Not Submitted) \
+Labels show percentage of total extension requests.
 
-#v(0.8em)
+#pagebreak()
 
-#text(weight: "bold")[Raw Values Summary]
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
++ Out of those who took extensions 93.5% (Count: 100) completed their extended work.
++ Out of those who took extensions 6.5% (Count: 7) did not complete their work (ghosted their work).
 
 #v(0.8em)
 
-#text(weight: "bold")[Statistical Note]
-#v(0.3em)
-*Test used:* Independent samples t-test \
-*Result:* _[ paste p-value and group means here ]_
-
-#v(0.8em)
-
+// ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-_[ Write your conclusion here ]_
+Students who requested an extension almost always did the work for the assignment in which the extension was used for. According to the percentages, 93.5% completed their work for the assignment an extension was used. 6.5% ghosted their assignment even after requesting an extension
