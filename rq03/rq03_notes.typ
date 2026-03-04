@@ -3,6 +3,7 @@
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Research Question 3]
   #v(0.2em)
@@ -13,19 +14,22 @@
 
 #v(0.8em)
 
+// ── Question ─────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Question]
+#v(0.3em)
+What will be the most common reason students will request extensions?
+
+#v(0.8em)
+
+// ── Hypothesis ───────────────────────────────────────────────────────────────
+#text(weight: "bold")[Hypothesis]
 #v(0.3em)
 The most common reason students request extensions will be workload conflicts
 (e.g., multiple assignments due simultaneously).
 
 #v(0.8em)
 
-#text(weight: "bold")[Hypothesis]
-#v(0.3em)
-_[ Write your hypothesis here ]_
-
-#v(0.8em)
-
+// ── Graph ────────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
@@ -35,6 +39,7 @@ _[ Write your hypothesis here ]_
 
 #v(0.8em)
 
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
 Horizontal bar chart — Top 5 reasons for requesting extensions. \
@@ -43,23 +48,28 @@ Horizontal bar chart — Top 5 reasons for requesting extensions. \
 Count labels displayed at the end of each bar. \
 Note: students may contribute to multiple reasons.
 
-#v(0.8em)
 
-#text(weight: "bold")[Raw Values Summary]
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
++ “I had other assignments due around the same time” : 78 responses
++ “I waited too long to start the assignment” : 60 responses
++ “I wanted more time to do a better job on the assignment or get more work done on it” : 43 responses
++ “I started the assignment early enough, but waited too long to get most of it done” :  35 responses
++ “I knew I could have an extra week to get it done, so I decided to do something more enjoyable instead.” : 32 responses
 
 #v(0.8em)
 
+// ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* Frequency count / descriptive \
-*Result:* _[ note top reason and its count here ]_
+*Result:* “I had other assignments due around the same time” : 78 responses
 
 #v(0.8em)
 
+// ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-_[ Write your conclusion here ]_
+Yes, this hypothesis is supported. 78 students answered that they “had other assignments due around the same time” which was the top reason. Note, students could answer multiple reasons.
