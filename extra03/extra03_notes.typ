@@ -3,6 +3,7 @@
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Extra 03]
   #v(0.2em)
@@ -13,6 +14,7 @@
 
 #v(0.8em)
 
+// ── Purpose ──────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Purpose]
 #v(0.3em)
 Does extension usage predict lower exam scores even after controlling for
@@ -20,12 +22,7 @@ prior GPA?
 
 #v(0.8em)
 
-#text(weight: "bold")[Hypothesis]
-#v(0.3em)
-_[ Write your hypothesis here ]_
-
-#v(0.8em)
-
+// ── Graph ────────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
@@ -35,6 +32,7 @@ _[ Write your hypothesis here ]_
 
 #v(0.8em)
 
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
 Grouped bar chart — Average final exam score by GPA range, grouped by extensions used. \
@@ -43,23 +41,20 @@ Grouped bar chart — Average final exam score by GPA range, grouped by extensio
 Grouped bars per GPA range, colored by extension count (0 / 1 / 2). \
 Score % labels above each bar; n= labels inside each bar.
 
-#v(0.8em)
+#pagebreak()
 
-#text(weight: "bold")[Raw Values Summary]
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
++ A Range (3.5 - 4.0) who used 0 extensions (count: 16) got a mean exam score of 103.04
++ A Range (3.5 - 4.0) who used 1 extension (count: 17) got a mean exam score of 100.66
++ A Range (3.5 - 4.0) who used 2 extensions (count: 19) got a mean exam score of 97.87
++ B Range (3.0 - 3.49) who used 0 extensions (count: 1) got a mean exam score of 117
++ B Range (3.0 - 3.49) who used 1 extension (count: 4) got a mean exam score of 88.57
++ B Range (3.0 - 3.49) who used 2 extensions (count: 12) got a mean exam score of 89.15
++ C/D Range (< 3.0) who used 0 extensions (count: 1) got a mean exam score of 82.69
++ C/D Range (< 3.0) who used 1 extension (count: 1) got a mean exam score of 92
++ C/D Range (< 3.0) who used 2 extensions (count: 9) got a mean exam score of 75.36
 
 #v(0.8em)
-
-#text(weight: "bold")[Statistical Note]
-#v(0.3em)
-*Test used:* Descriptive / controlled comparison \
-*Result:* _[ note key pattern, e.g. A-range students perform similarly regardless of extension use ]_
-
-#v(0.8em)
-
-#text(weight: "bold")[Notes / Interpretation]
-#v(0.3em)
-_[ Write your notes here ]_

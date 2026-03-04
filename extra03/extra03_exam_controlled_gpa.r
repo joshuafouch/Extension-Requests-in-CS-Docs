@@ -1,8 +1,5 @@
 ########## Extensions v Exam Scores Controlled for GPA ###################
 
-# Source setup
-source("00_setup.r")
-
 # Clean Data for Plotting
 Plot_Data <- object %>%
     # Filter out the "NA" rows
