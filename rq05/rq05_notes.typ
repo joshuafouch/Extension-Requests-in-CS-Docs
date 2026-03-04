@@ -3,6 +3,7 @@
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Research Question 5]
   #v(0.2em)
@@ -13,19 +14,21 @@
 
 #v(0.8em)
 
+// ── Question ─────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Question]
 #v(0.3em)
-Students who use extensions will not perceive assignments as less valuable to
-their education than students who do not.
+Will students who use extensions perceive assignments as less valuable to their education than students who do not?
 
 #v(0.8em)
 
+// ── Hypothesis ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Hypothesis]
 #v(0.3em)
-_[ Write your hypothesis here ]_
+Students who use extensions will *not* perceive assignments as less valuable to their education than students who do not.
 
 #v(0.8em)
 
+// ── Graph ────────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
@@ -33,8 +36,9 @@ _[ Write your hypothesis here ]_
   caption: [Perceived homework importance by extension user group.]
 )
 
-#v(0.8em)
+#pagebreak()
 
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
 Stacked proportional bar chart — Perceived homework importance by student group. \
@@ -42,23 +46,37 @@ Stacked proportional bar chart — Perceived homework importance by student grou
 *Y-axis:* Percentage of students \
 *Fill:* Response level (not at all / not really / yes, a little bit / yes, definitely)
 
+
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
 #v(0.8em)
 
-#text(weight: "bold")[Raw Values Summary]
+#text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
+Group sizes: Extension User $n = 65$, Non-User $n = 23$.
+
+*Extension User* ($n = 65$):
++ "not at all" — $42$ students ($64.6%$)
++ "not really" — $14$ students ($21.5%$)
++ "yes, a little bit" — $5$ students ($7.7%$)
++ "yes, definitely" — $4$ students ($6.2%$)
+
+*Non-User* ($n = 23$):
++ "not at all" — $9$ students ($39.1%$)
++ "not really" — $13$ students ($56.5%$)
++ "yes, a little bit" — $0$ students ($0.0%$)
++ "yes, definitely" — $1$ student ($4.3%$)
 
 #v(0.8em)
 
+// ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* Mann-Whitney U (Wilcoxon) \
-*Result:* _[ paste p-value here ]_
+*Result:* $ p = 0.1285 $
 
 #v(0.8em)
 
+// ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-_[ Write your conclusion here ]_
+A Mann-Whitney U test was conducted to determine if utilizing the extension policy led students to devalue the importance of their assignments. The analysis revealed no statistically significant difference in perceived assignment value between students who used extensions and those who did not (p > 0.05). Despite this, the data shows a shared consensus that the vast majority of students think that the policy’s flexibility does not directly impact their appreciation of the coursework.
