@@ -2,7 +2,7 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-H12_Data <- SurveyData %>%
+RQ4_Data <- SurveyData %>%
   mutate(
     Opinion = case_when(
       is.na(Extension_Impact_onQuality) | Extension_Impact_onQuality == "" ~ "Did Not Answer",
@@ -13,7 +13,7 @@ H12_Data <- SurveyData %>%
   )
 
 # Raw values: count and percentage per opinion category
-raw_values <- H12_Data %>%
+raw_values <- RQ4_Data %>%
   count(Opinion, name = "n") %>%
   mutate(Percentage = round(n / sum(n) * 100, 1))
 

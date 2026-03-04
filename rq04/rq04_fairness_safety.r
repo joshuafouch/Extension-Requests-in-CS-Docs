@@ -1,11 +1,8 @@
 ######## RESEARCH QUESTION 4 ######## 
 # The availability of automated, no-questions-asked extensions will increase students' overall sense of fairness and psychological safety in the course.
 
-# Source setup
-source("00_setup.r")
-
 # Prepare Data
-H12_Data <- SurveyData %>%
+RQ4_Data <- SurveyData %>%
     mutate(
         Opinion = case_when(
             is.na(Extension_Impact_onQuality) | Extension_Impact_onQuality == "" ~ "Did Not Answer",
@@ -16,7 +13,7 @@ H12_Data <- SurveyData %>%
     )
 
 # Plot the Graph
-ggplot(H12_Data, aes(x = Opinion, fill = Opinion, linetype = Opinion)) +
+ggplot(RQ4_Data, aes(x = Opinion, fill = Opinion, linetype = Opinion)) +
     
     # THICK LINES: size = 1.2 makes the border thick
     geom_bar(stat = "count", color = "gray30", size = 1.2, width = 0.7) +
@@ -31,9 +28,9 @@ ggplot(H12_Data, aes(x = Opinion, fill = Opinion, linetype = Opinion)) +
          y = "Number of Students") +
     
     # Custom Colors
-    scale_fill_manual(values = c("Made Course Better" = "#66c2a5", 
-                                 "No Impact" = "#999999", 
-                                 "Made Course Worse" = "#fc8d62",
+    scale_fill_manual(values = c("Made Course Better" = "darkgray", 
+                                 "No Impact" = "gray", 
+                                 "Made Course Worse" = "lightgray",
                                  "Did Not Answer" = "#f2f2f2")) + 
     
     # Custom Line Types: "Did Not Answer" gets a dashed border
@@ -44,3 +41,16 @@ ggplot(H12_Data, aes(x = Opinion, fill = Opinion, linetype = Opinion)) +
     
     theme_minimal() +
     theme(legend.position = "none")
+
+# proportions test
+# 1. Filter out the people who didn't answer so we only test valid opinions
+Valid_Opinions <- RQ4_Data %>%
+    filter(Opinion != "Did Not Answer" & !is.na(Opinion))
+
+# 2. Count how many said "Made Course Better" vs Total valid responses
+better_count <- sum(Valid_Opinions$Opinion == "Made Course Better")
+total_count <- nrow(Valid_Opinions)
+
+# 3. Run the Proportion Test 
+# (Testing if the proportion is significantly greater than 50%)
+prop.test(x = better_count, n = total_count, p = 0.5, alternative = "greater")
