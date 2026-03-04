@@ -40,13 +40,25 @@ students with higher starting GPAs.
 
 #v(0.8em)
 
-// ── Graph Description ────────────────────────────────────────────────────────
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
 Bar chart — Average number of extensions requested per GPA group. \
 *X-axis:* Estimated GPA range \
 *Y-axis:* Average number of extensions \
 n counts displayed inside each bar.
+
+#pagebreak()
+
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary]]
+#v(0.3em)
++ GPA Group $2.0 - 2.49$ (with a count of $3$) has $1.3333$ average extensions used
++ GPA Group $2.5 - 2.99$ (with a count of $8$) has $1.875$ average extensions used
++ GPA Group $3.0 - 3.49$ (with a count of $17$) has $1.6471$ average extensions used
++ GPA Group $3.5 - 4.0$ (with a count of $44$) has $1.1364$ average extensions used
++ GPA Group $4.0+$ (with a count of $8$) has $0.625$ average extensions used
 
 #v(0.8em)
 

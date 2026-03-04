@@ -2,8 +2,6 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-SurveyData <- read.csv("Aggregate_Survey+Grade_Data - SurveyData AnonimizedReconciled(1).csv", stringsAsFactors = FALSE)
-
 SurveyData$num_exts <- as.numeric(as.character(SurveyData$num_exts))
 
 SurveyData$Est_GPA[SurveyData$Est_GPA == "3.98"] <- "3.5 - 4.0"
