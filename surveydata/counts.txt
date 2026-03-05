@@ -1,0 +1,254 @@
+Survey Data Counts  (N = 147 total respondents)
+
+======================================================================
+
+Column: Class
+Question: For what class are you taking this survey?  Please fill out a separate survey for each class you are
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      41  CSC 144: Object Oriented Programming
+      40  CSC 261: Databases
+      24  CSC 145: Data Structures
+      19  CSC 344: Algorithms and Complexity
+      17  CSC 310: Programming Languages
+       6  CSC 171: Java (Applied Object-Oriented Programming)
+
+
+Column: Preferred_EX_Length
+Question: If you had the option of choosing how much extra time you'd have to complete an assignment after req
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      97  One week
+      19  3 Days
+       8  5 Days
+       6  2 Days
+       6  1 Day
+       5  More than one week
+       4  4 Days
+       2  6 Days
+
+
+Column: Reason_Used
+Question: If you took at least one extension, why did you do so?  Check all that apply
+Type: multi-select  |  Respondents: 147  |  Blank: 0
+  Responses (each respondent may select multiple):
+      78  I had other assignments due around the same time
+      60  I waited too long to start the assignment
+      43  I wanted more time to do a better job on the assignment, or get more work done on it
+      35  I started the assignment early enough, but waited too long to get most of it done
+      32  I knew I could have an extra week to get it done, so I decided to do something more enjoyable instead
+      27  I didn't take an extension at all
+      21  I could have completed it on time, but I didn't want the pressure
+      19  I didn't have the motivation to finish the assignment
+      17  I forgot the assignment was due
+      16  Emergency or family concerns
+      15  I started the assignment early and worked on it consistently before the deadline, but I still couldn't finish it on time
+
+Column: Process_Difficulty
+Question: Rate the difficulty of obtaining an extension (i.e. how hard was it to request one through Canvas). 
+Type: single-select  |  Respondents: 93  |  Blank: 54
+  Responses:
+      90  Very Straightforward and Easy
+       3  I had a lot of trouble figuring out what I needed to do
+
+
+Column: Comfortability
+Question: Emotionally, how comfortable did you feel requesting extensions in the manner described in the Canva
+Type: single-select  |  Respondents: 123  |  Blank: 24
+  Responses:
+      49  Very comfortable
+      27  Very uncomfortable
+      19  Somewhat comfortable
+      16  Neither comfortable nor uncomfortable
+      12  Somewhat uncomfortable
+
+
+Column: Importance_Meeting_OG_Deadline
+Question: Throughout the semester, how important was it to you that you complete an assignment on time by the 
+Type: single-select  |  Respondents: 52  |  Blank: 95
+  Responses:
+      49  Extremely Important
+       3  Not at all important
+
+
+Column: Pressure_Meeting_OG_Deadline
+Question: On average, how much pressure did you feel to get an assignment done by the ORIGINAL (i.e. non-exten
+Type: single-select  |  Respondents: 16  |  Blank: 131
+  Responses:
+      13  Exceptionally High Pressure
+       3  Zero Pressure
+
+
+Column: Pressure_Felt_To_CompleteHW
+Question: After taking an extension, how much pressure did you feel to get an assignment done before the EXTEN
+Type: single-select  |  Respondents: 44  |  Blank: 103
+  Responses:
+      33  Exceptionally High Pressure
+      11  Zero Pressure
+
+
+Column: Importance_Meeting_Deadlines_OtherClasses
+Question: In other classes, on average, how important to you is it that you complete your assignments by the d
+Type: single-select  |  Respondents: 63  |  Blank: 84
+  Responses:
+      63  Extremely Important
+
+
+Column: Importance_Meeting_Deadlines_OtherClasses_STRICT
+Question: In other classes with strict deadlines, on average, how much pressure do you typically feel to get a
+Type: single-select  |  Respondents: 54  |  Blank: 93
+  Responses:
+      52  Exceptionally High Pressure
+       2  Zero Pressure
+
+
+Column: Extension_Pressure_Impact
+Question: How do you feel having extensions available affected the pressure/stress level of the class overall?
+Type: single-select  |  Respondents: 24  |  Blank: 123
+  Responses:
+      16  It made no impact one way or another
+       5  Eliminated the pressure completely
+       3  It increased the pressure greatly
+
+
+Column: Preferred_HW_EX_AMT
+Question: How many one-week HOMEWORK extensions should be allowed per semester?.Preferred number of HOMEWORK e
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      80  2
+      54  3
+       6  On every assignment, if needed
+       3  1
+       2  4
+       2  5 or more
+
+
+Column: Preferred_Read_EX_AMT
+Question: How many one-week READING extensions should be allowed per semester?.Preferred number of READING ext
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      82  2
+      27  3
+      17  1
+       9  0
+       6  On every assignment, if needed
+       4  5 or more
+       2  4
+
+
+Column: HW_ImportanceValue
+Question: Did assignments feel less important or less valuable to your education because of being able to take
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      78  not at all
+      47  not really
+      12  yes, a little bit
+      10  yes, definitely
+
+
+Column: Reason_One_EX_Leftover
+Question: If you had ONLY ONE extension left over for either homework or readings, why did you NOT use it? Che
+Type: multi-select  |  Respondents: 63  |  Blank: 84
+  Responses (each respondent may select multiple):
+      41  I didn't need it, so I didn't take it
+      29  I wanted to save it for an emergency
+      12  I didn't want to use ANY extensions, but life and/or unforeseen circumstances forced me to use one.
+       2  I didn't know I could request extensions until later in the semester, but I didn't end up needing more than the extension(s) I took.
+       1  A. I heard there was extra credit when not using them at first so I did my best avoiding taking them B. Having two made me more cautious about when to use them
+       1  I just didn't want to, but I honestly forget if I did or not
+       1  used all
+       1  N/A
+       1  I likely would have taken more extensions, but I didn't know I could request extensions until later in the semester
+       1  I didn't know I could request extensions until later in the semester, so I couldn't actually use more than the extensions I took.
+       1  Stopped trying in the class, it felt erroneous
+
+
+Column: Reason_No_EX_Used
+Question: If you did not take an extension AT ALL, why not?  Select all that apply.  If not applicable, please
+Type: multi-select  |  Respondents: 34  |  Blank: 113
+  Responses (each respondent may select multiple):
+      18  I wanted to save all of them for emergencies only
+      16  I didn't need them at all, so I didn't take them
+      12  I didn't want to "give in" to using them unnecessarily
+      12  I saw it as a challenge to not use them.
+       3  I didn't want to take one because I would feel guilty, ashamed, or feel badly about myself in another way.
+       2  I didn't want the instructor to think negatively of me.
+       2  N/A
+       2  I couldn't figure out what I needed to do to request an extension.
+
+
+Column: Majority_of_Homework_DoneBy
+Question: In this class, on average, how many days before the deadline did you usually get more than 50% of an
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      45  1 day before the deadline
+      40  2 days before the deadline
+      29  3 days before the deadline
+      24  LESS THAN 1 day before the deadline
+       6  5 OR MORE days before the deadline
+       3  4 days before the deadline
+
+
+Column: Extension_Impact_onQuality
+Question: How did having the ability to request extensions impact the overall quality of the course, if at all
+Type: single-select  |  Respondents: 78  |  Blank: 69
+  Responses:
+      51  Made the course significantly better
+      26  Ability to request extensions had no impact on the overall quality of the course
+       1  Made the course significantly worse
+
+
+Column: Strict_Deadline_Effect
+Question: If instead this course had strict deadlines (where late work is only accepted after the deadline sol
+Type: single-select  |  Respondents: 78  |  Blank: 69
+  Responses:
+      42  This policy would make the course significantly worse
+      33  This policy would not impact the quality of the course overall
+       3  This policy would make the course significantly better
+
+
+Column: Year
+Question: What is your year classification (by credit)?
+Type: single-select  |  Respondents: 147  |  Blank: 0
+  Responses:
+      49  Sophomore
+      39  Senior
+      31  Junior
+      28  Freshman
+
+
+Column: Age
+Question: What is your biological age?.Biological Age
+Type: single-select  |  Respondents: 34  |  Blank: 113
+  Responses:
+      13  19
+       7  20
+       6  18
+       3  23
+       2  24+
+       2  21
+       1  22
+
+
+Column: Est_GPA
+Question: (Optional) What is your estimated (or exact, if you know it) current GPA range? If this is your firs
+Type: single-select  |  Respondents: 135  |  Blank: 12
+  Responses:
+      60  3.5 - 4.0
+      31  3.0 - 3.49
+      22  2.5 - 2.99
+      12  4.0+
+       8  2.0 - 2.49
+       2  1.5 - 1.99
+
+
+Column: HS_Type
+Question: What type of education did you receive in high school?  Select all that apply.
+Type: multi-select  |  Respondents: 144  |  Blank: 3
+  Responses (each respondent may select multiple):
+      60  Private Religious High School
+      52  Public High School
+      43  Homeschool
+       3  Private Non-Religious High School
+       3  G.E.D.
+       2  I received online public schooling at home.
