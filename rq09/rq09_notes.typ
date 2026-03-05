@@ -1,63 +1,76 @@
-#set document(title: "RQ09 — Year Level & Extension Usage")
+#set document(title: "RQ09 — Achievement Gap")
 #set page(margin: 1.2in)
 #set text(font: "New Computer Modern", size: 11pt)
 #set par(justify: true)
 
+// ── Title ────────────────────────────────────────────────────────────────────
 #align(center)[
   #text(size: 16pt, weight: "bold")[Research Question 9]
   #v(0.2em)
-  #text(size: 12pt, style: "italic")[Year Level & Extension Usage]
+  #text(size: 12pt, style: "italic")[Achievement Gap]
   #v(0.4em)
   #line(length: 100%)
 ]
 
 #v(0.8em)
 
+// ── Question ─────────────────────────────────────────────────────────────────
 #text(weight: "bold")[Question]
 #v(0.3em)
-Is there a correlation between grade level and the amount of extensions used?
+Does the policy help close the gap between students with lower prior GPAs and
+high achievers?
 
 #v(0.8em)
 
-#text(weight: "bold")[Hypothesis]
-#v(0.3em)
-_[ Write your hypothesis here ]_
-
-#v(0.8em)
-
-#text(weight: "bold")[Graph]
+// ── Graph 1 ──────────────────────────────────────────────────────────────────
+#text(weight: "bold")[Graph 1 — Extensions by GPA]
 #v(0.3em)
 #figure(
   image("rq09_graph.png", width: 100%),
-  caption: [Average extension usage by academic year level.]
+  caption: [Average extensions used per GPA range.]
 )
 
 #v(0.8em)
 
+// ─ Graph Description ────────────────────────────────────────────────────────
+#text(weight: "bold")[Graph 1 Description]
+#v(0.3em)
+Bar chart — Average number of extensions used per GPA range. \
+*X-axis:* Self-reported GPA (ascending) \
+*Y-axis:* Average extensions used
+
+#pagebreak()
+
+// ── Graph 2 ──────────────────────────────────────────────────────────────────
+#text(weight: "bold")[Graph 2 — Final Grade by GPA]
+#v(0.3em)
+#figure(
+  image("rq09_graph2.png", width: 100%),
+  caption: [Final course grade (%) per GPA range, with failure threshold.]
+)
+
+#v(0.8em)
+
+// ─ Graph Description ────────────────────────────────────────────────────────
 #text(weight: "bold")[Graph Description]
 #v(0.3em)
-Bar chart — Average extensions used per academic year level. \
-*X-axis:* Year level (Freshman / Sophomore / Junior / Senior) \
-*Y-axis:* Average extensions used \
-n counts displayed above each bar.
+Boxplot with jitter — Final course grade (%) per GPA range. \
+*X-axis:* Self-reported GPA \
+*Y-axis:* Final course grade (%) \
+Mean score labels shown above each box. Red dashed line at y = 70 (failure threshold).
+
 
 #v(0.8em)
 
-#text(weight: "bold")[Raw Values Summary]
-#v(0.3em)
-#rect(width: 100%, stroke: 0.5pt, inset: 10pt)[
-  _[ paste raw values here ]_
-]
-
-#v(0.8em)
-
+// ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
-*Test used:* One-way ANOVA \
-*Result:* _[ paste p-value here ]_
+*Test used:* Spearman Correlation (Graph 1) \
+*Result:* $ p < 0.005, r = -0.325 $
 
 #v(0.8em)
 
+// ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-_[ Write your conclusion here ]_
+A significant correlation is shown: as a student’s self-report of their GPA lowers, the higher amount of extensions they will use. Due to our smaller amount of data (n = 147), the graph does not seem to show much of a difference. To prove that the extension policy helps students who have a lower self-reported GPA, the second graph shows that the 2 lower GPA groups still got around an 85% as their Final Grade, which is still a good grade in our University.
