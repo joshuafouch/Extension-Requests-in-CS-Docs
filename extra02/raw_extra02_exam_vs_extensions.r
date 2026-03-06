@@ -2,7 +2,7 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-Exam_Data <- SurveyData %>%
+Exam_Data <- SURVEYDATA %>%
   mutate(
     num_exts         = as.numeric(as.character(num_exts)),
     Final_Exam_Score = as.numeric(Final_Exam_Score)

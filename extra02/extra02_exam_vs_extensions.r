@@ -1,7 +1,7 @@
 ####### Exam Scores versus Extensions Used ############
 
 # 1. Clean Data (Strict Filter for NAs)
-Exam_Data <- SurveyData %>%
+Exam_Data <- SURVEYDATA %>%
     # Convert to numeric FIRST
     mutate(
         num_exts = as.numeric(as.character(num_exts)),

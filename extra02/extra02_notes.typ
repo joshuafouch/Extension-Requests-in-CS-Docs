@@ -46,9 +46,9 @@ Significance star (\*) annotated on the graph.
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-+ Those who took no extensions (count: 23) got a mean exam score of 103.2
++ Those who took no extensions (count: 22) got a mean exam score of 104.4
 + Those who took 1 extensions (count: 23) got a mean exam score of 97.8
-+ Those who took 2 extensions (count: 42) got a mean exam score of 88.7
++ Those who took 2 extensions (count: 40) got a mean exam score of 88.7
 
 #v(0.8em)
 
