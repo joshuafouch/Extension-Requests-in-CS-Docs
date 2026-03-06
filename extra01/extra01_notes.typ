@@ -35,9 +35,9 @@ Tabular output — printed to console and exported as a CSV. \
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-+ A Range (3.5 - 4.0) who used 0 extensions had an average exam score of $103.04$ and an average final grade of $101.99$ (count: $16$)
++ A Range (3.5 - 4.0) who used 0 extensions had an average exam score of $104.74$ and an average final grade of $102.15$ (count: $15$)
 + A Range (3.5 - 4.0) who used 1 extension had an average exam score of $100.66$ and an average final grade of $100.64$ (count: $17$)
-+ A Range (3.5 - 4.0) who used 2 extensions had an average exam score of $97.87$ and an average final grade of $100$ (count: $19$)
++ A Range (3.5 - 4.0) who used 2 extensions had an average exam score of $99.11$ and an average final grade of $101.02$ (count: $17$)
 + B Range (3.0 - 3.49) who used 0 extensions had an average exam score of $117$ and an average final grade of $103.27$ (count: $1$)
 + B Range (3.0 - 3.49) who used 1 extension had an average exam score of $88.57$ and an average final grade of $96.6$ (count: $4$)
 + B Range (3.0 - 3.49) who used 2 extensions had an average exam score of $89.15$ and an average final grade of $92.48$ (count: $12$)

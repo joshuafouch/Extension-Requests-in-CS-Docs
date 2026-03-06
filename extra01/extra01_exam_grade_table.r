@@ -1,7 +1,7 @@
 ####### Table of Exam Scores, Final Grades, Avg Extensions, etc... #############
 
 # 1. Clean and Prepare Data
-Summary_Data <- SurveyData %>%
+Summary_Data <- SURVEYDATA %>%
   # FILTER: Remove students who don't have a Final Exam Score (The "NA" lines)
   filter(!is.na(Final_Exam_Score) & !is.na(num_exts) & !is.na(Est_GPA)) %>%
   mutate(
