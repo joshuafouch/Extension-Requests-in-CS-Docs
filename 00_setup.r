@@ -19,6 +19,17 @@ SURVEYDATA <- read.table(
    comment.char = ""
 )
 
+# for linux
+# dependency: xclip
+SURVEYDATA <- read.table(
+   pipe("xclip -selection clipboard -o", "r"), 
+   sep = "\t",
+   header = FALSE,
+   fill = TRUE,
+   quote = "",
+   comment.char = ""
+)
+
 # CREATE THE HEADER:
 header_row <- as.character(SURVEYDATA[1, ])
 
