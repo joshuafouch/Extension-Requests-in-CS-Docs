@@ -2,22 +2,22 @@
 # Students with lower starting GPAs are more likely to request extensions than students with higher starting GPAs.
 
 # Fix non-numeric extension column
-SurveyData$num_exts <- as.numeric(as.character(SurveyData$num_exts))
+SURVEYDATA$num_exts <- as.numeric(as.character(SURVEYDATA$num_exts))
 
 # Fix inconsistent GPA labels
-SurveyData$Est_GPA[SurveyData$Est_GPA == "3.98"] <- "3.5 - 4.0"
-SurveyData$Est_GPA[SurveyData$Est_GPA == "3.96"] <- "3.5 - 4.0"
+SURVEYDATA$Est_GPA[SURVEYDATA$Est_GPA == "3.98"] <- "3.5 - 4.0"
+SURVEYDATA$Est_GPA[SURVEYDATA$Est_GPA == "3.96"] <- "3.5 - 4.0"
 
 # Define Order
 gpa_levels <- c("1.5 - 1.99", "2.0 - 2.49", "2.5 - 2.99", "3.0 - 3.49", "3.5 - 4.0", "4.0+")
-SurveyData$Est_GPA_Factor <- factor(SurveyData$Est_GPA, levels = gpa_levels)
-SurveyData$GPA_Rank <- as.numeric(SurveyData$Est_GPA_Factor)
+SURVEYDATA$Est_GPA_Factor <- factor(SURVEYDATA$Est_GPA, levels = gpa_levels)
+SURVEYDATA$GPA_Rank <- as.numeric(SURVEYDATA$Est_GPA_Factor)
 
 # 1. Statistical Test (Spearman Correlation)
-print(cor.test(SurveyData$GPA_Rank, SurveyData$num_exts, method = "spearman"))
+print(cor.test(SURVEYDATA$GPA_Rank, SURVEYDATA$num_exts, method = "spearman"))
 
 # 2. Visualization
-ggplot(subset(SurveyData, !is.na(Est_GPA_Factor)), aes(x = Est_GPA_Factor, y = num_exts)) + 
+ggplot(subset(SURVEYDATA, !is.na(Est_GPA_Factor)), aes(x = Est_GPA_Factor, y = num_exts)) + 
   
   stat_summary(fun = mean, geom = "bar", fill = "darkgray", color = "black", width = 0.7) + 
   
