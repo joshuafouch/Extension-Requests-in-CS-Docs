@@ -2,11 +2,11 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-SurveyData$num_exts <- as.numeric(as.character(SurveyData$num_exts))
+SURVEYDATA$num_exts <- as.numeric(as.character(SURVEYDATA$num_exts))
 
-SurveyData$Course_Code <- str_split(SurveyData$Class, ":", simplify = TRUE)[, 1]
+SURVEYDATA$Course_Code <- str_split(SURVEYDATA$Class, ":", simplify = TRUE)[, 1]
 
-Class_Data <- SurveyData %>%
+Class_Data <- SURVEYDATA %>%
   filter(!is.na(num_exts) & !is.na(Course_Code))
 
 # Raw values: mean extensions and n count per course

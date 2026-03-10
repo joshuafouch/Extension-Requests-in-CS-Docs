@@ -2,14 +2,14 @@
 # Students in lower-division (freshman/sophomore) courses will request extensions more frequently than those in upper-division (junior) courses.
 
 # Ensure extensions are numeric
-SurveyData$num_exts <- as.numeric(as.character(SurveyData$num_exts))
+SURVEYDATA$num_exts <- as.numeric(as.character(SURVEYDATA$num_exts))
 
 # Prepare Data
 # Split "CSC 144: Object Oriented..." to just "CSC 144"
-SurveyData$Course_Code <- str_split(SurveyData$Class, ":", simplify = TRUE)[, 1]
+SURVEYDATA$Course_Code <- str_split(SURVEYDATA$Class, ":", simplify = TRUE)[, 1]
 
 # Filter out rows with missing extensions or course codes
-Class_Data <- SurveyData %>% 
+Class_Data <- SURVEYDATA %>% 
     filter(!is.na(num_exts) & !is.na(Course_Code))
 
 # Calculate Counts (n) manually for labels
