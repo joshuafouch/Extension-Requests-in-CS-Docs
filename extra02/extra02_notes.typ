@@ -12,6 +12,7 @@
   #line(length: 100%)
 ]
 
+
 #v(0.8em)
 
 // ── Purpose ──────────────────────────────────────────────────────────────────
@@ -29,6 +30,7 @@ Does the number of extensions used correlate with final exam performance?
   caption: [Average final exam score by number of extensions used.]
 )
 
+
 #v(0.8em)
 
 // ─ Graph Description ────────────────────────────────────────────────────────
@@ -40,9 +42,10 @@ Bar chart — Average final exam score per extension usage group. \
 n counts shown inside bars; mean % shown above bars. \
 Significance star (\*) annotated on the graph.
 
-#pagebreak()
 
 // ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#pagebreak()
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
