@@ -1,7 +1,7 @@
 ########## Extensions v Exam Scores Controlled for GPA ###################
 
 # Clean Data for Plotting
-Plot_Data <- object %>%
+Plot_Data <- SURVEYDATA %>%
     # Filter out the "NA" rows
     filter(num_exts != "" & !is.na(Avg_Exam_Score)) %>%
     mutate(

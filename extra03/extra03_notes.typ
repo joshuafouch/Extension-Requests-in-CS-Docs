@@ -47,9 +47,9 @@ Score % labels above each bar; n= labels inside each bar.
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-+ A Range (3.5 - 4.0) who used 0 extensions (count: 16) got a mean exam score of 103.04
++ A Range (3.5 - 4.0) who used 0 extensions (count: 15) got a mean exam score of 104.74
 + A Range (3.5 - 4.0) who used 1 extension (count: 17) got a mean exam score of 100.66
-+ A Range (3.5 - 4.0) who used 2 extensions (count: 19) got a mean exam score of 97.87
++ A Range (3.5 - 4.0) who used 2 extensions (count: 17) got a mean exam score of 99.11
 + B Range (3.0 - 3.49) who used 0 extensions (count: 1) got a mean exam score of 117
 + B Range (3.0 - 3.49) who used 1 extension (count: 4) got a mean exam score of 88.57
 + B Range (3.0 - 3.49) who used 2 extensions (count: 12) got a mean exam score of 89.15
