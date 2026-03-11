@@ -2,7 +2,7 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-RQ4_Data <- SurveyData %>%
+RQ4_Data <- SURVEYDATA %>%
   mutate(
     Opinion = case_when(
       is.na(Extension_Impact_onQuality) | Extension_Impact_onQuality == "" ~ "Did Not Answer",

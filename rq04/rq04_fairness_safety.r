@@ -2,7 +2,7 @@
 # The availability of automated, no-questions-asked extensions will increase students' overall sense of fairness and psychological safety in the course.
 
 # Prepare Data
-RQ4_Data <- SurveyData %>%
+RQ4_Data <- SURVEYDATA %>%
     mutate(
         Opinion = case_when(
             is.na(Extension_Impact_onQuality) | Extension_Impact_onQuality == "" ~ "Did Not Answer",

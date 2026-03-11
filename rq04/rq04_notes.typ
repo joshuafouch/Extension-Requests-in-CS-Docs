@@ -51,10 +51,9 @@ Labels show n= count and percentage for each bar.
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-+ 46.9% (n = 69) of respondents didn’t answer (oddly)
-+ 34.7% (n=51) of respondents stated it made the course better
-+ 0.7% (n=1) stated it made the course worse
-+ 17.7% (n=26) stated the policy had no impact on course quality
++ 43.3% (n = 45) of respondents didn’t answer (oddly)
++ 36.5% (n=38) of respondents stated it made the course better
++ 20.2% (n=21) stated the policy had no impact on course quality
 
 #v(0.8em)
 
@@ -62,7 +61,7 @@ Labels show n= count and percentage for each bar.
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* Descriptive / frequency count / proportions test \
-*Result:*  $ p < 0.01 $
+*Result:*  $ p < 0.05 $
 
 #v(0.8em)
 
