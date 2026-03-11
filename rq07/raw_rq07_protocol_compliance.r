@@ -2,7 +2,7 @@
 # Prints all x/y values and n counts displayed in the graph (histogram)
 
 
-Compliance_Data <- SurveyData %>%
+Compliance_Data <- SURVEYDATA %>%
   filter(!is.na(ext_1_reqd_correctly)) %>%
   mutate(
     Timing = ifelse(ext_1_reqd_correctly >= 0, "Correct (In Advance)", "Incorrect (After Deadline)")

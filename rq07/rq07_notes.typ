@@ -49,19 +49,19 @@ Vertical dashed line at x = 0. Bin width: 1 day.
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-Of the 88 students with recorded extension request timing, 85 (96.6%) submitted
-correctly in advance and 3 (3.4%) submitted after the deadline.
+Of the 85 students with recorded extension request timing, 82 (96.4%) submitted
+correctly in advance and 3 (3.5%) submitted after the deadline.
 
-Among the 85 correct requests: 22 submitted on the day of the deadline (0 days
-before), 5 submitted 1 day before, 5 submitted 2 days before, 23 submitted
+Among the 82 correct requests: 21 submitted on the day of the deadline (0 days
+before), 5 submitted 1 day before, 5 submitted 2 days before, 21 submitted
 3 days before, 14 submitted 4 days before, 10 submitted 5 days before, 5
 submitted 6 days before, and 1 submitted 8 days before.
 
 Among the 3 incorrect requests: 2 were submitted 4 days after the deadline and
 1 was submitted 5 days after the deadline.
 
-The mean request timing across all 88 students was 2.44 days before the
-deadline (median: 3.00 days; range: −5 to +8 days).
+The mean request timing across all 85 students was 2.46 days before the
+deadline.
 
 #v(0.8em)
 

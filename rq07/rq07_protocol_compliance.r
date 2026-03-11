@@ -4,7 +4,7 @@
 # Prepare Data
 # Positive Value = Days BEFORE deadline (Good)
 # Negative Value = Days AFTER deadline (Bad)
-Compliance_Data <- SurveyData %>%
+Compliance_Data <- SURVEYDATA %>%
   filter(!is.na(ext_1_reqd_correctly)) %>%
   mutate(
     Timing = ifelse(ext_1_reqd_correctly >= 0, "Correct (In Advance)", "Incorrect (After Deadline)")
