@@ -19,6 +19,7 @@ Exam_Data <- SURVEYDATA %>%
 anova_model <- aov(Final_Exam_Score ~ Extension_Group, data = Exam_Data)
 p_val <- summary(anova_model)[[1]][["Pr(>F)"]][1]
 p_text <- paste0("p = ", round(p_val, 3), " (Significant)")
+summary(anova_model)
 
 # 3. Create the Bar Graph
 ggplot(Exam_Data, aes(x = Extension_Group, y = Final_Exam_Score, fill = Extension_Group)) +

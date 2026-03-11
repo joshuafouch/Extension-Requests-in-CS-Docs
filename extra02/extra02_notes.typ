@@ -59,6 +59,6 @@ Significance star (\*) annotated on the graph.
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* One-way ANOVA \
-*Result:* $ p = 0.017 $
+*Result:* $ p < 0.05 $
 
 #v(0.8em)
