@@ -69,11 +69,11 @@ n counts displayed inside each bar.
 
 *Result:* 
 $
-rho = -0.42, p < 0.0001 $
+rho = -0.43, p < 0.0001 $
 
 #v(0.8em)
 
 // ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-Using a Spearman Correlation with a rho value of -0.42 and a P-value of < 0.0001. This means there is a moderate negative correlation; as the GPA increases, the number of extensions requested decreases. The bar graph shows a clear downward trend. The reason there are no entries for the “1.5 - 1.99” rank is due to no IRB approved students answering this.
+Using a Spearman Correlation with a rho value of -0.43 and a P-value of < 0.0001. This means there is a moderate negative correlation; as the GPA increases, the number of extensions requested decreases. The bar graph shows a clear downward trend. The reason there are no entries for the “1.5 - 1.99” rank is due to no IRB approved students answering this.

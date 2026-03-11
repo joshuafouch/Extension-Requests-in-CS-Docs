@@ -66,7 +66,7 @@ Error bars shown. n counts displayed at the bottom of each bar.
 #v(0.3em)
 *Test used:* One-way ANOVA \
 *Result:* 
-$ F(5, 82) = 2.31, p > 0.05 $
+$ F(4, 80) = 3.20, p = 0.017 $
 
 #v(0.8em)
 
@@ -76,4 +76,4 @@ $ F(5, 82) = 2.31, p > 0.05 $
 Based on our tests, there is no significant correlation between extension usage and the courses, either upper or lower level. In CSC 145, there is a higher amount of extensions used, however, this could be due to the amount of assignments in the class. I was not satisfied with this conclusion, so I decided to perform another correlation between the grade level and the number of extensions used (see Research Question 9)
 
 *AI*:
-"A one-way ANOVA was conducted to determine if the number of extension requests differed significantly across the different courses. The results indicated a marginally significant difference between the courses ($F(5, 82) = 2.31, p = 0.051$). While the p-value sits just above the strict 0.05 threshold for statistical significance, the data suggests a strong trending variance in extension usage depending on the specific class a student is taking.
+"A one-way ANOVA was conducted to determine if the number of extension requests differed significantly across the different courses. The results indicated a marginally significant difference between the courses ($F(4, 80) = 3.20, p = 0.017$). While the p-value sits just above the strict 0.05 threshold for statistical significance, the data suggests a strong trending variance in extension usage depending on the specific class a student is taking.
