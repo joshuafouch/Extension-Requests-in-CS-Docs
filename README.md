@@ -56,23 +56,6 @@ Each `rq*/` and `extra*/` folder contains:
 | `extra02` | Exam Scores vs Extensions Used | Does the number of extensions used correlate with final exam performance?            |
 | `extra03` | Exam Scores Controlled for GPA | Does extension usage predict lower exam scores after controlling for prior GPA?      |
 
----
-
-## Data
-
-**`surveydata/surveydata.csv`** — 147 respondents across 6 courses:
-
-| Course                                    | n  |
-| :---------------------------------------- | -: |
-| CSC 144: Object Oriented Programming      | 41 |
-| CSC 261: Databases                        | 40 |
-| CSC 145: Data Structures                  | 24 |
-| CSC 344: Algorithms and Complexity        | 19 |
-| CSC 310: Programming Languages            | 17 |
-| CSC 171: Java (Applied OOP)               |  6 |
-
-Column names are short identifiers defined in `newheadernames.csv`.
-Response counts for every survey question are in `surveydata/counts.txt`.
 
 ---
 
