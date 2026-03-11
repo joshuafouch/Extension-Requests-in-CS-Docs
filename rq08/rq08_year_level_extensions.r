@@ -2,7 +2,7 @@
 # Is there a correlation between grade level and the amount of extensions used?
 
 # Load and Order Data
-Year_Data <- SurveyData %>%
+Year_Data <- SURVEYDATA %>%
     filter(!is.na(num_exts) & Year %in% c("Freshman", "Sophomore", "Junior", "Senior")) %>%
     mutate(
         num_exts = as.numeric(num_exts),

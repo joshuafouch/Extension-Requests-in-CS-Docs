@@ -46,10 +46,10 @@ n counts displayed above each bar.
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
 
-+ The Freshman (Count: 20) had an mean of 0.9 extensions used.
-+ The Sophomore (Count: 29) had an mean of 1.2414 extensions used.
-+ The Junior (Count: 20) had an mean of 1.25 extensions used.
-+ The Freshman (Count: 19) had an mean of 1.4737 extensions used.
++ The Freshmen (Count: 18) had an mean of 0.89 extensions used.
++ The Sophomores (Count: 29) had an mean of 1.24 extensions used.
++ The Juniors (Count: 20) had an mean of 1.25 extensions used.
++ The Seniors (Count: 18) had an mean of 1.44 extensions used.
 
 #v(0.8em)
 
@@ -57,7 +57,7 @@ n counts displayed above each bar.
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* One-way ANOVA \
-*Result:* $ p = 0.194 $
+*Result:* $ p = 0.243 $
 
 #v(0.8em)
 

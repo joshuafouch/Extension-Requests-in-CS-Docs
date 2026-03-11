@@ -2,7 +2,7 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-Year_Data <- SurveyData %>%
+Year_Data <- SURVEYDATA %>%
   filter(!is.na(num_exts) & Year %in% c("Freshman", "Sophomore", "Junior", "Senior")) %>%
   mutate(
     num_exts = as.numeric(num_exts),
