@@ -3,7 +3,7 @@
 
 
 # ── GRAPH 1: Average Extensions Used by GPA ──────────────────────────────────
-GPA_Data <- SurveyData %>%
+GPA_Data <- SURVEYDATA %>%
   filter(Est_GPA != "" & !is.na(num_exts)) %>%
   mutate(
     num_exts = as.numeric(num_exts),
@@ -28,7 +28,7 @@ cat("\nSpearman correlation p-value:", round(cor_test$p.value, 3),
     " | r =", round(cor_test$estimate, 3), "\n")
 
 # ── GRAPH 2: Final Course Grade (%) by GPA ───────────────────────────────────
-RQ3_Grades <- SurveyData %>%
+RQ3_Grades <- SURVEYDATA %>%
   filter(Est_GPA != "" & !is.na(Final_Score)) %>%
   mutate(
     Final_Score = as.numeric(as.character(Final_Score)),

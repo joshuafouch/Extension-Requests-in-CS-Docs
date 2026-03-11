@@ -3,7 +3,7 @@
 
 # Does the policy help close the gap?
 # Clean and Order GPA Data
-GPA_Data <- SurveyData %>%
+GPA_Data <- SURVEYDATA %>%
     filter(Est_GPA != "" & !is.na(num_exts)) %>%
     mutate(
         num_exts = as.numeric(num_exts),
@@ -35,7 +35,7 @@ ggplot(GPA_Data, aes(x = Est_GPA, y = num_exts, fill = Est_GPA)) +
 
 # To further prove this, did the low self-reported GPA students still success in class?
 # Prepare Data (Clean and Order)
-RQ3_Grades <- SurveyData %>%
+RQ3_Grades <- SURVEYDATA %>%
     filter(Est_GPA != "" & !is.na(Final_Score)) %>%
     mutate(
         Final_Score = as.numeric(as.character(Final_Score)),

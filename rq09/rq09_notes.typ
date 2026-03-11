@@ -62,15 +62,26 @@ Mean score labels shown above each box. Red dashed line at y = 70 (failure thres
 
 #v(0.8em)
 
+// ── Raw Values Summary ─────────────────────────────────────────────────────────
+
+#text(weight: "bold")[#highlight[Raw Values Summary (for Graph 2)]]
+#v(0.3em)
++ The $2.0 - 2.49$ GPA Group (count: 3) had a mean score of 87.6
++ The $2.5 - 2.99$ GPA Group (count: 9) had a mean score of 86.9
++ The $3.0 - 3.49$ GPA Group (count: 18) had a mean score of 93.2
++ The $3.5 - 4.0$ GPA Group (count: 41) had a mean score of 100.0
+
+#v(0.8em)
+
 // ── Statistical Note ─────────────────────────────────────────────────────────
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* Spearman Correlation (Graph 1) \
-*Result:* $ p < 0.005, r = -0.325 $
+*Result:* $ p < 0.004, r = -0.34 $
 
 #v(0.8em)
 
 // ── Conclusion ───────────────────────────────────────────────────────────────
 #text(weight: "bold")[Conclusion]
 #v(0.3em)
-A significant correlation is shown: as a student’s self-report of their GPA lowers, the higher amount of extensions they will use. Due to our smaller amount of data (n = 147), the graph does not seem to show much of a difference. To prove that the extension policy helps students who have a lower self-reported GPA, the second graph shows that the 2 lower GPA groups still got around an 85% as their Final Grade, which is still a good grade in our University.
+A significant correlation is shown: as a student’s self-report of their GPA lowers, the higher amount of extensions they will use. Due to our smaller amount of data (n = 105), the graph does not seem to show much of a difference. To prove that the extension policy helps students who have a lower self-reported GPA, the second graph shows that the 2 lower GPA groups still got around an 85% as their Final Grade, which is still a good grade in our University.
