@@ -36,3 +36,6 @@ ggplot(subset(SURVEYDATA, !is.na(Est_GPA_Factor)), aes(x = Est_GPA_Factor, y = n
   
   coord_cartesian(ylim = c(0, 2.5)) +
   scale_x_discrete(drop = FALSE)
+
+cor_test <- cor.test(SURVEYDATA$GPA_Rank, SURVEYDATA$num_exts, method = "spearman")
+print(cor_test)

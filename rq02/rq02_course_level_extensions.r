@@ -35,3 +35,6 @@ ggplot(Class_Data, aes(x = Course_Code, y = num_exts, fill = Course_Code)) +
     theme(legend.position = "none", 
           axis.text.x = element_text(angle = 45, hjust = 1)) +
     coord_cartesian(ylim = c(0, 2.5))
+
+anova_model <- aov(num_exts ~ Course_Code, data = Class_Data)
+summary(anova_model)
