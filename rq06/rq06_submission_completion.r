@@ -13,7 +13,7 @@ SURVEYDATA <- SURVEYDATA %>%
   )
 
 
-Extension_Users <- SurveyData %>%
+Extension_Users <- SURVEYDATA %>%
   filter(num_exts > 0)
 
 # Calculate Stats

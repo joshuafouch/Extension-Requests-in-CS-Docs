@@ -26,7 +26,7 @@ versus the percentage that were submitted?
 #text(weight: "bold")[Graph]
 #v(0.3em)
 #figure(
-  image("rq06_graph.png", width: 80%),
+  image("rq06_graph.png", width: 100%),
   caption: [Submission outcomes for extension requests.]
 )
 
@@ -45,8 +45,8 @@ Labels show percentage of total extension requests.
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-+ Out of those who took extensions 93.5% (Count: 100) completed their extended work.
-+ Out of those who took extensions 6.5% (Count: 7) did not complete their work (ghosted their work).
++ Out of those who took extensions 94.2% (Count: 97) completed their extended work.
++ Out of those who took extensions 5.8% (Count: 6) did not complete their work (ghosted their work).
 
 #v(0.8em)
 

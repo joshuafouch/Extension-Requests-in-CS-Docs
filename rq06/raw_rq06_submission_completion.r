@@ -12,7 +12,7 @@ SURVEYDATA <- SURVEYDATA %>%
     num_of_late_submissions_without_extensions = as.numeric(as.character(num_of_late_submissions_without_extensions))
   )
 
-Extension_Users <- Data %>%
+Extension_Users <- SURVEYDATA %>%
   filter(num_exts > 0)
 
 Total_Requests  <- sum(Extension_Users$num_exts, na.rm = TRUE)
