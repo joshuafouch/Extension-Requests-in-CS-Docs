@@ -2,11 +2,11 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-if (!"Total_Extensions" %in% names(SurveyData) && "num_exts" %in% names(SurveyData)) {
-  SurveyData$Total_Extensions <- as.numeric(SurveyData$num_exts)
+if (!"Total_Extensions" %in% names(SURVEYDATA) && "num_exts" %in% names(SURVEYDATA)) {
+  SURVEYDATA$Total_Extensions <- as.numeric(SURVEYDATA$num_exts)
 }
 
-H14_Data <- SurveyData %>%
+RQ05_DATA <- SURVEYDATA %>%
   filter(!is.na(HW_ImportanceValue) & !is.na(Total_Extensions)) %>%
   mutate(
     User_Group = ifelse(Total_Extensions > 0, "Extension User", "Non-User"),
@@ -21,7 +21,7 @@ H14_Data <- SurveyData %>%
   )
 
 # Raw values: count and proportion per group x response level
-raw_values <- H14_Data %>%
+raw_values <- RQ05_DATA %>%
   count(User_Group, Response, name = "n") %>%
   group_by(User_Group) %>%
   mutate(
@@ -31,7 +31,7 @@ raw_values <- H14_Data %>%
   ungroup()
 
 # Group totals (n shown per bar in the graph)
-group_totals <- H14_Data %>%
+group_totals <- RQ05_DATA %>%
   count(User_Group, name = "Group_n")
 
 cat("=== RQ05: Does the Extension Policy Devalue Assignments? ===\n")

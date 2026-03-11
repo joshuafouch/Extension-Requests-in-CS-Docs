@@ -2,12 +2,12 @@
 # Students who use extensions will not perceive assignments as less valuable to their education than students who do not.
 
 # Ensure 'Total_Extensions' exists (mapped from num_exts)
-if(!"Total_Extensions" %in% names(SurveyData) && "num_exts" %in% names(SurveyData)) {
-    SurveyData$Total_Extensions <- as.numeric(SurveyData$num_exts)
+if(!"Total_Extensions" %in% names(SURVEYDATA) && "num_exts" %in% names(SURVEYDATA)) {
+    SURVEYDATA$Total_Extensions <- as.numeric(SURVEYDATA$num_exts)
 }
 
 # Prepare Data
-H14_Data <- SurveyData %>%
+RQ05_DATA <- SURVEYDATA %>%
     filter(!is.na(HW_ImportanceValue) & !is.na(Total_Extensions)) %>%
     mutate(
         User_Group = ifelse(Total_Extensions > 0, "Extension User", "Non-User"),
@@ -24,10 +24,10 @@ H14_Data <- SurveyData %>%
 
 # Run the Statistical Test (Mann-Whitney U)
 # We need this to generate the 'test_result' variable used in the graph subtitle
-test_result <- wilcox.test(Response_Score ~ User_Group, data = H14_Data)
+test_result <- wilcox.test(Response_Score ~ User_Group, data = RQ05_DATA)
 
 # Create the Graph with Custom Colors
-ggplot(H14_Data, aes(x = User_Group, fill = Response)) +
+ggplot(RQ05_DATA, aes(x = User_Group, fill = Response)) +
     geom_bar(position = "fill", width = 0.6) +
     
     # Custom Manual Colors (Shades of Gray)

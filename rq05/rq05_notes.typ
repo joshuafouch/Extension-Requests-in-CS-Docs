@@ -52,19 +52,18 @@ Stacked proportional bar chart — Perceived homework importance by student grou
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-Group sizes: Extension User $n = 65$, Non-User $n = 23$.
+Group sizes: Extension User $n = 63$, Non-User $n = 22$.
 
-*Extension User* ($n = 65$):
-+ "not at all" — $42$ students ($64.6%$)
-+ "not really" — $14$ students ($21.5%$)
-+ "yes, a little bit" — $5$ students ($7.7%$)
-+ "yes, definitely" — $4$ students ($6.2%$)
+*Extension User* ($n = 63$):
++ "not at all" — $40$ students ($63.5%$)
++ "not really" — $14$ students ($22.2%$)
++ "yes, a little bit" — $5$ students ($7.9%$)
++ "yes, definitely" — $4$ students ($6.3%$)
 
 *Non-User* ($n = 23$):
-+ "not at all" — $9$ students ($39.1%$)
-+ "not really" — $13$ students ($56.5%$)
-+ "yes, a little bit" — $0$ students ($0.0%$)
-+ "yes, definitely" — $1$ student ($4.3%$)
++ "not at all" — $8$ students ($36.4%$)
++ "not really" — $13$ students ($59.1%$)
++ "yes, definitely" — $1$ student ($4.5%$)
 
 #v(0.8em)
 
@@ -72,7 +71,7 @@ Group sizes: Extension User $n = 65$, Non-User $n = 23$.
 #text(weight: "bold")[Statistical Note]
 #v(0.3em)
 *Test used:* Mann-Whitney U (Wilcoxon) \
-*Result:* $ p = 0.1285 $
+*Result:* $ p = 0.1174 $
 
 #v(0.8em)
 
