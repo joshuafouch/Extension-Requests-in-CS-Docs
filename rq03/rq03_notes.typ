@@ -53,11 +53,11 @@ Note: students may contribute to multiple reasons.
 
 #text(weight: "bold")[#highlight[Raw Values Summary]]
 #v(0.3em)
-+ “I had other assignments due around the same time” : 78 responses
-+ “I waited too long to start the assignment” : 60 responses
-+ “I wanted more time to do a better job on the assignment or get more work done on it” : 43 responses
-+ “I started the assignment early enough, but waited too long to get most of it done” :  35 responses
-+ “I knew I could have an extra week to get it done, so I decided to do something more enjoyable instead.” : 32 responses
++ “I had other assignments due around the same time” : 58 responses
++ “I waited too long to start the assignment” : 41 responses
++ “I wanted more time to do a better job on the assignment or get more work done on it” : 32 responses
++ “I started the assignment early enough, but waited too long to get most of it done” :  27 responses
++ "I could have completed it on time, but I didn't want the pressure" : 18 responses
 
 #v(0.8em)
 

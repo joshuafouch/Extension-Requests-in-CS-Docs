@@ -2,7 +2,7 @@
 # Prints all x/y values and n counts displayed in the graph
 
 
-ReasonData <- SurveyData %>%
+ReasonData <- SURVEYDATA %>%
   filter(!is.na(Reason_Used)) %>%
   separate_rows(Reason_Used, sep = ";") %>%
   mutate(Reason_Used = trimws(Reason_Used)) %>%

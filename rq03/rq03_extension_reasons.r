@@ -3,7 +3,7 @@
 
 
 # Find the Averages
-ReasonData <- SurveyData %>% filter(!is.na(Reason_Used)) %>% separate_rows(Reason_Used, sep = ";") %>% mutate(Reason_Used = trimws(Reason_Used)) %>% filter(Reason_Used != "") 
+ReasonData <- SURVEYDATA %>% filter(!is.na(Reason_Used)) %>% separate_rows(Reason_Used, sep = ";") %>% mutate(Reason_Used = trimws(Reason_Used)) %>% filter(Reason_Used != "") 
 ReasonCounts <- ReasonData %>% count(Reason_Used, sort = TRUE, name = "Count") 
 
 # Plot with Text Wrapping 
