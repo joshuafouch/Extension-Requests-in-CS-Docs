@@ -41,3 +41,51 @@ print(as.data.frame(RQ01_raw_values))
 
 rq1_cor_test <- cor.test(Cleaned_RQ01_Data$GPA_Rank, Cleaned_RQ01_Data$num_exts_Requested, method = "spearman")
 print(rq1_cor_test)
+
+
+
+# for the IEEE standard bar graph: (AI produced)
+IEEE_plot_rq01 <- ggplot(RQ01_raw_values, aes(x = GPA_Group, y = Mean_Extensions)) +
+  
+  # 1. Bar Chart: Grayscale fill with black borders
+  geom_bar(stat = "identity", fill = "gray70", color = "black", width = 0.6) +
+  
+  # 2. Add stacked labels: Exact Y-value on top, (n=X) right below it
+  geom_text(aes(label = paste0(round(Mean_Extensions, 2), "\n(n=", n, ")")), 
+            vjust = -0.2,       
+            size = 2.75,        
+            lineheight = 0.9,   
+            family = "serif",   # Matches the label font to the rest of the graph
+            fontface = "bold") +
+  
+  # 3. Axis Labels
+  labs(
+    x = "Self-Reported GPA Range",
+    y = "Average Extensions Requested"
+  ) +
+  
+  # 4. IEEE Strict Formatting Theme (Now with "Bible Font")
+  theme_classic() +
+  theme(
+    text = element_text(family = "serif", size = 10, color = "black"), # Changed to serif
+    axis.text.x = element_text(angle = 45, hjust = 1, color = "black"),
+    axis.text.y = element_text(color = "black"),
+    plot.title = element_blank(),    
+    plot.subtitle = element_blank(),
+    legend.position = "none"         
+  ) +
+  
+  # Expand the top of the Y-axis by 20%
+  scale_y_continuous(expand = expansion(mult = c(0, 0.2)))
+
+# Print to check it
+print(IEEE_plot_rq01)
+
+# 5. Export to exact IEEE specifications
+ggsave("IEEE_Figure_RQ01.png", plot = IEEE_plot_rq01, 
+       width = 3.5, height = 3.0, units = "in", dpi = 300)
+
+
+
+
+
