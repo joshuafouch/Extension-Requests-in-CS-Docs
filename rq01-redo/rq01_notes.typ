@@ -30,6 +30,13 @@ students with higher starting GPAs.
 
 #v(0.8em)
 
+#text(weight: "bold")[#highlight[PUT THIS ON THE PAPER!!!]]
+
+$ p = 0.0001 $
+$ rho = -0.38 $
+
+*This means there is a significant moderate negative correlation between GPA and Extensions Requested*
+
 // ── Graph ────────────────────────────────────────────────────────────────────
 //#text(weight: "bold")[Graph]
 //#v(0.3em)
@@ -52,7 +59,7 @@ students with higher starting GPAs.
 
 // ── Raw Values Summary ─────────────────────────────────────────────────────────
 
-#text(weight: "bold")[#highlight[Raw Values Summary]]
+#text(weight: "bold")[Raw Values Summary]
 #v(0.3em)
 
 #text(weight: "bold")[OLD DATA]
@@ -100,6 +107,7 @@ sample estimates:
        rho 
 -0.3831952
 `
+
 
 #v(0.8em)
 

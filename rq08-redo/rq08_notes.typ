@@ -21,6 +21,25 @@ Is there a correlation between grade level and the amount of extensions used?
 
 #v(0.8em)
 
+*#highlight(fill: rgb("e2f8e1"))[NEW RESULT]* $ p = 0.091 $
+`
+            Df Sum Sq Mean Sq F value Pr(>F)  
+Year         3   4.27  1.4232   2.219 0.0911 .
+Residuals   93  59.65  0.6414                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+`
+
+#text(weight: "bold")[#highlight[PUT THIS ON PAPER]]
+
+$ (F(3, 93) = 2.22, p < 0.1) $
+
+* Year(3) comes from (\# of groups) - 1 * \
+* Residuals(93) comes from (\# of rows) - (\# of groups) *
+
+F = 2.22 means that there is some difference between extension usage and years, _however_, the p-value (0.0911) shows that there is a 9% chance this happened by chance, so basically this means its not significant.
+
+
 // ── Graph ────────────────────────────────────────────────────────────────────
 //#text(weight: "bold")[Graph]
 //#v(0.3em)
@@ -42,7 +61,7 @@ Is there a correlation between grade level and the amount of extensions used?
 
 // ── Raw Values Summary ─────────────────────────────────────────────────────────
 
-#text(weight: "bold")[#highlight[Raw Values Summary]]
+#text(weight: "bold")[Raw Values Summary]
 #v(0.3em)
 
 #text(weight: "bold")[OLD DATA]
@@ -72,10 +91,7 @@ Is there a correlation between grade level and the amount of extensions used?
 #v(0.3em)
 *Test used:* One-way ANOVA \
 *OLD Result:* $p = 0.243$ \
-*#highlight(fill: rgb("e2f8e1"))[NEW RESULT]* $ p = 0.091 $
-`
-ANOVA p-value: 0.091
-`
+
 #v(0.8em)
 
 // ── Conclusion ───────────────────────────────────────────────────────────────
