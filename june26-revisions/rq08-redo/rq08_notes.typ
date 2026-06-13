@@ -23,9 +23,9 @@ Is there a correlation between grade level and the amount of extensions used?
 
 *#highlight(fill: rgb("e2f8e1"))[NEW RESULT]* $ p = 0.091 $
 `
-            Df Sum Sq Mean Sq F value Pr(>F)  
+            Df Sum Sq Mean Sq F value Pr(>F)
 Year         3   4.27  1.4232   2.219 0.0911 .
-Residuals   93  59.65  0.6414                 
+Residuals   93  59.65  0.6414
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 `
@@ -76,8 +76,18 @@ F = 2.22 means that there is some difference between extension usage and years, 
 + The Juniors (Count: 23) had an mean of 1.44 extensions used.
 + The Seniors (Count: 22) had an mean of 1.55 extensions used.
 
++ ANOVA
 `
        Year  n Mean_Extensions        SE
+1  Freshman 17          0.9412 0.2005615
+2 Sophomore 35          1.2000 0.1408259
+3    Junior 23          1.4348 0.1642577
+4    Senior 22          1.5455 0.1574592
+`
+
++ SPEARMAN CORRELATION TEST
+`
+Year  n Mean_Extensions        SE
 1  Freshman 17          0.9412 0.2005615
 2 Sophomore 35          1.2000 0.1408259
 3    Junior 23          1.4348 0.1642577
@@ -91,6 +101,18 @@ F = 2.22 means that there is some difference between extension usage and years, 
 #v(0.3em)
 *Test used:* One-way ANOVA \
 *OLD Result:* $p = 0.243$ \
+
+*Spearman Correlation*
+`
+Spearman's rank correlation rho
+
+data:  Year_Data$Year_Rank and Year_Data$num_exts_Requested
+S = 111942, p-value = 0.008977
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+     rho
+0.2640025
+`
 
 #v(0.8em)
 

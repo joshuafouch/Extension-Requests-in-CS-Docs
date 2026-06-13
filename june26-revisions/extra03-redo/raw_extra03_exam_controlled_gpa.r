@@ -37,6 +37,10 @@ TTable_Output <- Extra03_Summary_Data %>%
     # THE FIX: If n=1, set the error to 0. Otherwise, calculate it normally!
     SE_Grade = ifelse(Student_Count == 1, 0, sd(Final_Score, na.rm = TRUE) / sqrt(Student_Count)),
 
+    Raw_SE = sd(Final_Score, na.rm = TRUE) / sqrt(Student_Count),
+
+    SE_Text_Shift = ifelse(Student_Count <= 2, 0, Raw_SE),
+
     .groups = 'drop'
   )
 
@@ -54,13 +58,14 @@ IEEE_plot_leveler <- ggplot(TTable_Output, aes(x = GPA_Range, y = Avg_Final_Grad
   # 1. Grouped bars (position_dodge puts them side-by-side)
   geom_bar(stat = "identity", position = position_dodge(width = 0.8), color = "black", width = 0.7) +
 
-  # 2. THE FIX: Add Error Bars using the SAME position_dodge width so they align perfectly!
-  geom_errorbar(aes(ymin = Avg_Final_Grade - SE_Grade, ymax = Avg_Final_Grade + SE_Grade),
+# UPDATED: Use 'SE_Bar' for the ymin/ymax. R will skip drawing whiskers where this is NA.
+  geom_errorbar(aes(ymin = Avg_Final_Grade - SE_Bar, ymax = Avg_Final_Grade + SE_Bar),
                 position = position_dodge(width = 0.8),
                 width = 0.25, color = "black", linewidth = 0.6) +
 
-  # 3. THE FIX: Shift the text above the error bar AND maintain the position_dodge
-  geom_text(aes(y = Avg_Final_Grade + SE_Grade, label = paste0(round(Avg_Final_Grade, 1), "\n(n=", Student_Count, ")")),
+# UPDATED: Use 'SE_Text_Shift' for the Y coordinate.
+#
+  geom_text(aes(y = Avg_Final_Grade + SE_Text_Shift, label = paste0(round(Avg_Final_Grade, 1), "\n(n=", Student_Count, ")")),
             position = position_dodge(width = 0.8),
             vjust = -0.3,
             size = 2.5,
@@ -69,15 +74,13 @@ IEEE_plot_leveler <- ggplot(TTable_Output, aes(x = GPA_Range, y = Avg_Final_Grad
             fontface = "bold",
             color = "black") +
 
-  # IEEE Black & White Contrast Palette
   scale_fill_manual(
     values = c("0 Ext." = "gray90",
-               "1 Ext." = "gray60",
-               "2 Ext." = "gray30"),
+                "1 Ext." = "gray60",
+                "2 Ext." = "gray30"),
     name = "Extensions Used:"
   ) +
 
-  # Axis Labels
   labs(
     x = "Student Starting GPA Range",
     y = "Average Final Course Grade (%)"
@@ -103,3 +106,7 @@ IEEE_plot_leveler <- ggplot(TTable_Output, aes(x = GPA_Range, y = Avg_Final_Grad
   coord_cartesian(ylim = c(50, 120))
 
 print(IEEE_plot_leveler)
+
+# Export to IEEE specs
+ ggsave("~/Downloads/IEEE_Figure_extra03.png", plot = IEEE_plot_leveler,
+        width = 800, height = 688, units = "px", dpi = 300, bg = "white")
